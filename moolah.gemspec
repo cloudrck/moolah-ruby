@@ -7,6 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "moolah-ruby"
   gem.version       = Moolah::VERSION
   gem.authors       = ["Daejuan Jacobs"]
+  gem.license       = ["MIT"]
   gem.email         = [""]
   gem.description   = ["Wrapper for the Moolah API"]
   gem.summary       = ["Wrapper for the Moolah API"]
@@ -24,8 +25,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rake"
 
   # Gems that must be intalled for sift to work
-  gem.add_dependency "httparty", ">= 0.8.3"
-  gem.add_dependency "multi_json", ">= 1.3.4"
+  gem.add_dependency "httparty", "~> 0.8.3"
+  gem.add_dependency "multi_json", "~> 1.3.4"
   #gem.add_dependency "money", "= 5.1.1"
-  gem.add_dependency "hashie", ">= 1.2.0"
+  gem.add_dependency "hashie", "~> 1.2.0"
 end

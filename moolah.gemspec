@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "moolah-ruby"
   gem.version       = Moolah::VERSION
   gem.authors       = ["Daejuan Jacobs"]
-  gem.license       = ["MIT"]
+  gem.licenses       = ["MIT"]
   gem.email         = [""]
   gem.description   = ["Wrapper for the Moolah API"]
   gem.summary       = ["Wrapper for the Moolah API"]

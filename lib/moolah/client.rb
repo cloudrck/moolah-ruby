@@ -5,13 +5,11 @@ module Moolah
   class Client
     include HTTParty
     base_uri 'https://moolah.io'
+    headers 'User-Agent' => 'application/ruby+json'
     
-    def initialize
-	@headers = {'User-Agent' => 'application/ruby.sinatra+json'}
-    end
     # Get URL
     def generate_url_payment (options={})
-    	r = self.class.get('/api/pay', :query => options, :headers => @headers)
+    	r = self.class.get('/api/pay', options)
     	return r
     end
   end

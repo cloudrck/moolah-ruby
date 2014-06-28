@@ -7,11 +7,11 @@ module Moolah
     base_uri 'https://moolah.io'
     
     def initialize
-	@headers = {headers: {'User-Agent' => 'application/ruby.sinatra+json'} }
+	@headers = {'User-Agent' => 'application/ruby.sinatra+json'}
     end
     # Get URL
     def generate_url_payment (options={})
-    	r = self.class.get('/api/pay', options, @headers)
+    	r = self.class.get('/api/pay', :query => options, :headers => @headers)
     	return r
     end
   end
